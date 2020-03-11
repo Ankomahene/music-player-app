@@ -1,0 +1,28 @@
+{
+  "name": "music-player",
+  "version": "1.0.0",
+  "description": "A minimal desktop music player app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron ."
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "music",
+    "player",
+    "mp3",
+    "audio"
+  ],
+  "author": "Shadrack",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^8.0.1"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "electron-window-state": "^5.0.3",
+    "music-metadata": "^6.3.4"
+  }
+}

@@ -1,0 +1,72 @@
+.sideA {
+    height: 100vh;
+}
+
+.loader {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+#add-playlist {
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    transition: all .3s;
+}
+
+#add-playlist:hover {
+    box-shadow: 1px 2px 2px grey;
+}
+
+table {
+    cursor: pointer;
+}
+
+#timer-section {
+    border-radius: 30px;
+}
+
+#playlist {
+    overflow-y: scroll;
+    height: 200px;
+    display: block;
+}
+
+#playlists {
+    overflow-y: scroll;
+    height: 300px;
+    display: block;
+
+}
+
+#header {
+    width: 400px;
+    background: DodgerBlue;
+    border-bottom: 1px solid red;
+}
+
+#header div {
+    padding: 1px 5px;
+    float: left;
+    border-right: 1px solid orange;
+}
+
+#header #head1 {
+    width: 100px;
+}
+
+/* the same as td1 */
+#header #head2 {
+    width: 140px;
+}
+
+/* the same as td2 */
+#header #head3 {
+    float: none;
+    border-right-width: 0
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <link rel="stylesheet" href="../assets/bmd/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="../assets/fai/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Music Player</title>
+</head>
+
+<body>
+  <div class="container-fluid bg-light">
+    <div class="row">
+      <div class="col-4 sideA border-right">
+        <div class="card text-center loader">
+          <!-- <img src="../assets/gif/music.png" class="mx-auto" width="100px" alt=""> -->
+          <img src="../assets/gif/motion_7.gif" class="mx-auto" width="200px" alt="">
+        </div>
+
+        <div class="playlist my-3">
+          <div class="d-flex justify-content-around text-secondary">
+            <p>Playlist</p>
+            <button id="add-playlist" type="button" class="text-center rounded-circle">
+              <i class="fas fa-plus-circle"></i>
+            </button>
+          </div>
+
+          <div class="card bg-white">
+            <table id="playlist" class="table table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col"><small>Playlist Name</small></th>
+                  <th scope="col"><small>No. songs</small></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><small>Country</small></td>
+                  <td><small>15</small></td>
+                </tr>
+                <tr>
+                  <td><small>My world</small></td>
+                  <td><small>7</small></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- main section -->
+      <div class="col-8 sideB">
+        <div class="container-fluid">
+          <div class="p-1 border my-2">
+            <div class="row bg-light w-100 mx-auto">
+              <div class="col-1">Title: </div>
+              <div id="song-title" class="col-11 text-muted">Broken Vessels (Amazing Grace) [Hillsong] cover...</div>
+            </div>
+          </div>
+
+          <!-- add songs and time section -->
+          <div class="bg-white my-4">
+            <div class="row text-align-center text-primary align-items-center justify-content-around p-1 rounded">
+              <div class="col-5">
+                <div class="text-center">
+                  <button type="button" class="btn btn-primary btn-raised"><small><i
+                        class="fas fa-backward"></i></small></button>
+                  <button type="button" class="btn btn-warning bmd-btn-fab">
+                    <small><i class="fas fa-play"></i></small>
+                  </button>
+                  <button type="button" class="btn btn-primary btn-raised">
+                    <small><i class="fas fa-forward"></i></small>
+                  </button>
+                </div>
+              </div>
+              <div id="timer-section" class="col-4 pt-2 bg-secondary h5 py-1 text-light text-center">
+                <span id="time-left">00:00</span>
+                <span id="time-left"> | </span>
+                <span id="total-time">00:00</span>
+              </div>
+              <div class="col-3">
+                <button type="button" class="btn btn-raised btn-dark"> <small><i class="fas fa-plus-circle"></i>
+                    Add</small></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- table -->
+          <table id="playlists" class="table table-hover table-borderless table-striped my-3">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Duration</th>
+                <th scope="col">Title</th>
+                <th scope="col">Artist</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><small>1</small></td>
+                <td><small>05:35</small></td>
+                <td><small>Broken Vessels (Amazing Grace) [Hillsong] cover</small></td>
+                <td><small>Sarah Reeves</small></td>
+              </tr>
+              <tr>
+                <td><small>2</small></td>
+                <td><small>04:05</small></td>
+                <td><small>Amazing Grace</small></td>
+                <td><small>Kari Jobs</small></td>
+              </tr>
+              <tr>
+                <td><small>3</small></td>
+                <td><small>04:05</small></td>
+                <td><small>Amazing Grace</small></td>
+                <td><small>Kari Jobs</small></td>
+              </tr>
+              <tr>
+                <td><small>4</small></td>
+                <td><small>05:35</small></td>
+                <td><small>Broken Vessels (Amazing Grace) [Hillsong] cover</small></td>
+                <td><small>Sarah Reeves</small></td>
+              </tr>
+              <tr>
+                <td><small>5</small></td>
+                <td><small>05:35</small></td>
+                <td><small>Broken Vessels (Amazing Grace) [Hillsong] cover</small></td>
+                <td><small>Sarah Reeves</small></td>
+              </tr>
+              <tr>
+                <td><small>6</small></td>
+                <td><small>05:35</small></td>
+                <td><small>Broken Vessels (Amazing Grace) [Hillsong] cover</small></td>
+                <td><small>Sarah Reeves</small></td>
+              </tr>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- You can also require other files to run in this process -->
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
